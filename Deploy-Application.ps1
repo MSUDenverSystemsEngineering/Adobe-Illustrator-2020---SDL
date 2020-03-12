@@ -147,7 +147,6 @@ Try {
 
 		$exitCode = Execute-Process -Path "$dirFiles\Build\setup.exe" -Parameters "--silent --INSTALLLANGUAGE=en_US" -WindowStyle "Hidden" -PassThru
 		If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
-		
 
 
 		##*===============================================
